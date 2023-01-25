@@ -1,0 +1,109 @@
+* {
+    font-family: 'Open Sans', sans-serif ;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    height: 100vh;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 30vh;
+    width: 50%;
+    background-color: #e0e0e0;
+    border-radius: 50px;
+    box-shadow:  33px 33px 66px #bebebe,
+                -33px -33px 66px #ffffff;
+}
+
+.title-container {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.title {
+    color: #0099ff;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 1px 0px 1px #CCCCCC, 
+                 0px 1px 1px #EEEEEE, 
+                 2px 1px 1px #CCCCCC, 
+                 1px 2px 1px #EEEEEE, 
+                 3px 2px 1px #CCCCCC, 
+                 2px 3px 1px #EEEEEE, 
+                 4px 3px 1px #CCCCCC, 
+                 3px 4px 1px #EEEEEE, 
+                 5px 4px 1px #CCCCCC, 
+                 4px 5px 1px #EEEEEE, 
+                 6px 5px 1px #CCCCCC, 
+                 5px 6px 1px #EEEEEE, 
+                 7px 6px 1px #CCCCCC;
+    transition: all ease 0.3s;
+}
+
+.title:hover{
+    margin-bottom: 10px;
+    transform: scale(1.1);
+}
+
+.description {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+input {
+    width: 100%;
+    height: 50px;
+    background-color: #e0e0e0;
+    border: solid 2px #0099ff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    border: solid 2px #0099ff;
+    box-shadow: 0px 0px 62px -2px rgba(0,153,255,0.3);
+}
+
+button {
+    background-color: #0099ff;
+    border-radius: 10px;
+    padding: 7px;
+    width: 20%;
+    font-size: 25px;
+    font-weight: 600;
+    color: #e0e0e0;
+    transition: all ease 0.3s;
+    border: solid 2px transparent;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    color: #0099ff;
+    border: solid 2px #0099ff;
+    box-shadow: 0px 0px 62px -2px rgba(0,153,255,0.3);
+}
