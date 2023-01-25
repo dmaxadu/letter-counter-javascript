@@ -7,9 +7,15 @@ const popUp = () => {
     let result = document.querySelector(".result");
     let showPhrase = document.querySelector(".the-phrase")
     popup.style.display = "flex";
-    count = countLetter(userPhrase);
-    showPhrase.innerText = "The phrase " + "\"" + userPhrase + "\"" + " has:"
-    result.innerText = count + " Letters";
+    if(userPhrase !== ""){
+        count = countLetter(userPhrase);
+        showPhrase.innerText = "The phrase " + "\"" + userPhrase + "\"" + " has:";
+        result.innerText = count + " Letters";
+    }
+    else{
+        showPhrase.innerText = "Give me something to count...";
+        result.innerText = "🥺";
+    }
     
 }
 
